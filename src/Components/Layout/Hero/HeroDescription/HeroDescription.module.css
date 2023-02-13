@@ -1,0 +1,195 @@
+/* The Main Container */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .description {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .description {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .description {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .description {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .description {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* It Contains All Details */
+.information {
+    display: flex;
+    justify-content: center;
+    margin: 0.1rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* It Contains All Details */
+.information {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* It Contains All Details */
+.information {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* It Contains All Details */
+.information {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* It Contains All Details */
+.information {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* The Icon Container */
+.iconbutton {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.5rem 0 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* The Icon Container */
+.iconbutton {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* The Icon Container */
+.iconbutton {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* The Icon Container */
+.iconbutton {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* The Icon Container */
+.iconbutton {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+}
+
+/* The Icon */
+.icon {
+    color: rgb(79, 78, 78);
+}
+
+/* the Numbers and Titles */
+.details > h5, p {
+    color: #ffffff;
+}
+
+.details > p {
+    font-size: small;
+}
+
+

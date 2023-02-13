@@ -1,0 +1,28 @@
+/* The Main Contaainer */
+.home {
+    background-color: #283046;
+    margin: 1% 1% 1% 15%;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 -0.5rem 0;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.search-text {
+    color: #ffffff;
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.list {
+    margin: 0 0.5rem;
+}

@@ -1,0 +1,35 @@
+.date-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.date-input {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    height: 1.1rem;
+    width: 9rem;
+    outline: none;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.options {
+    margin-left: 0.5rem;
+}
+
+.button {
+    margin-right: 0.5rem;
+    height: 1.3rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #7367ef;
+}

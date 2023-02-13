@@ -1,0 +1,126 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sidebar-options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2rem;
+      padding: 0.1rem 0rem;
+      cursor: pointer;
+      color:  rgb(66, 60, 60);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .sidebar-options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        padding: 0.1rem 0rem;
+        cursor: pointer;
+        color:  rgb(66, 60, 60);
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .sidebar-options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2rem;
+      padding: 0.1rem 0 0.1rem 0.3rem;
+      cursor: pointer;
+      color:  rgb(66, 60, 60);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .sidebar-options {
+      display: flex;
+      align-items: center;
+      height: 2rem;
+      margin: 2% 0;
+      padding: 0rem 0.5rem;
+      cursor: pointer;
+      color:  rgb(66, 60, 60);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sidebar-options {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 2rem;
+        margin: 2% 0;
+        padding: 0rem 1rem;
+        cursor: pointer;
+        color:  rgb(66, 60, 60);
+      }
+}
+
+
+.sidebar-options:hover,
+.sidebar-icons:hover,
+.sidebar-options:hover > h4 {
+    color: #d0d4de;
+    background-color: #6059c5;
+    font-weight: 600;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sidebar-options > h4 {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .sidebar-options > h4 {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .sidebar-options > h4 {
+        display: flex;
+        flex: 1;
+        color: #d0d4de;
+        margin-left: 0.2rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .sidebar-options > h4 {
+        flex: 1;
+        color: #d0d4de;
+        margin-left: 1rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sidebar-options > h4 {
+        flex: 1;
+        color: #d0d4de;
+        margin-left: 1rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+.sidebar-icons {
+    color: #d0d4de;
+}
