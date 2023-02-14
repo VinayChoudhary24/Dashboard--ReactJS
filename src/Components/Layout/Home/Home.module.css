@@ -1,7 +1,53 @@
 /* The Main Contaainer */
-.home {
-    background-color: #283046;
-    margin: 1% 1% 1% 15%;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        background-color: #283046;
+        margin: 1% 1% 1% 15%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .home {
+        background-color: #283046;
+        margin: 1% 1% 1% 15%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .home {
+        background-color: #283046;
+        margin: 1% 1% 1% 15%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .home {
+        background-color: #283046;
+        margin: 1% 1% 1% 15%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .home {
+        background-color: #283046;
+        margin: 1% 1% 1% 15%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
 }
 
 .search-bar {
@@ -10,17 +56,67 @@
     margin: 0 0 -0.5rem 0;
 }
 
-.search-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
+@media only screen and (max-width: 600px) {
+    .search-form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.4rem;
+    }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .search-form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.4rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .search-form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.4rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .search-form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.4rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .search-form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.4rem;
+    }
+}
+
 
 .search-text {
     color: #ffffff;
     margin: 0 0.5rem 0 0.5rem;
     font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .date-filter {
+        margin: 0 0 0.5rem 0.3rem;
+        display: flex;
+    }
 }
 
 .list {

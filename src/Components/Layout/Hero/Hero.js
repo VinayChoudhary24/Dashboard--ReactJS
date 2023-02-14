@@ -9,7 +9,7 @@ const Hero = () => {
     const [appDetails, setAppDetails] = useState([]);
 
     // State for Loading Spinner, by Default the Value is false
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     // State for Error
     const [httpError, setHttpError] = useState()
@@ -77,13 +77,13 @@ const Hero = () => {
     ));
 
   return (
-    <section className={classes.hero}>
+    <div className={classes.hero}>
       {/* Show the List when not Loading anymore */}
       {isLoading ? <LoadingSpinner /> : <div>{appDetailsList}</div>}
 
       {/* Error Message */}
       {!isLoading && httpError && <p>{httpError}</p>}
-    </section>
+    </div>
   )
 }
 

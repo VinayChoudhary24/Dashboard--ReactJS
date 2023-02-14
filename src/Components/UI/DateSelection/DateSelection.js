@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import classes from "./DateSelection.module.css";
+import moment from "moment";
+// import { DatePicker, Space } from "antd";
+// const { RangePicker } = DatePicker;
 
 function DateSelection() {
-  const [dateRange, setDateRange] = useState([null, null]);
+  const [dateRange, setDateRange] = useState([]);
+  // console.log(dateRange)
   const [startDate, endDate] = dateRange;
 
   //  On Cancel Button Click
@@ -13,32 +17,39 @@ function DateSelection() {
   }
 
   // On Search Button Click
-  function search(startDate, endDate) {
-    
-  }
+  const search = async () => {};
 
   return (
     <div className={classes["date-selection"]}>
+      
       <div>
         {/* The Calender */}
-      <DatePicker
+        <DatePicker
         className={classes["date-input"]}
         placeholderText="Select Range"
         selectsRange={true}
         startDate={startDate}
         endDate={endDate}
-        onChange={(update) => {
-          setDateRange(update);
+        onChange={ (values) => {
+          // const value1 = moment(values[0].format('YYYY-MM-DD'))
+          // // console.log(value1);
+          setDateRange(values.map( item => {
+            return moment(item).format('YYYY-MM-DD');
+          }))
         }}
           // isClearable={true}
       />
       </div>
-      
+
       <div className={classes.options}>
-        <button className={classes.button} onClick={resetInput}>Clear</button>
-        <button className={classes.button} onClick={search}>Search</button>
+        <button className={classes.button} onClick={resetInput}>
+          Clear
+        </button>
+        <button className={classes.button} onClick={search()}>
+          Search
+        </button>
       </div>
-      
+
     </div>
   );
 }

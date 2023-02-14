@@ -1,6 +1,13 @@
+@media only screen and (max-width: 600px) {
+    table {
+    display: block;
+}
+}
+
 
 table {
     width: 100%;
+    overflow: scroll;
     margin: auto;
     background-color: transparent;
     margin: 0.5rem 0 0 0;

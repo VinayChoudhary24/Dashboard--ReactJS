@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DateSelection from "../../UI/DateSelection/DateSelection";
 import LoadingSpinner from "../../UI/LoadingSpinner/LoadingSpinner";
-import SearchForm from "../../Utils/SearchForm/SearchForm";
+import SearchForm from "../../UI/SearchForm/SearchForm";
 import DetailedList from "./DetailedList/DetailedList";
 import classes from "./Home.module.css";
 
@@ -10,7 +10,7 @@ const Home = () => {
   const [detailedAppList, setDetailedAppList] = useState([]);
 
   // State for Loading Spinner, by Default the Value is false
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   // State for Error
   const [httpError, setHttpError] = useState();
@@ -38,6 +38,7 @@ const Home = () => {
 
       // Transform the Data
       const loadedData = [];
+       console.log(responseData.data);
       for (const key in responseData) {
         loadedData.push({
           id: key,
@@ -51,8 +52,8 @@ const Home = () => {
           androidChurn: responseData[key].data[0].android_churn,
           iosChurn: responseData[key].data[0].ios_churn,
         });
-        // console.log(responseData[key].data);
-        // console.log(responseData[key].data[0].totalinstall);
+        // console.log(responseData.data[0].totalInstall);
+        // console.log(responseData.data.totalinstall);
         // console.log(responseData[key].data[0].ios_install);
       }
       // Update the AppDetailsList

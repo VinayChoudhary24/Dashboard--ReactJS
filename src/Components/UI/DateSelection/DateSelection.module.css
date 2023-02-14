@@ -1,9 +1,51 @@
-.date-selection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .date-selection {
+        display: flex;
+        align-items: center;
+    }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .date-selection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .date-selection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .date-selection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .date-selection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+    }
+}
+
 
 .date-input {
     background-color: transparent;
@@ -17,6 +59,20 @@
 
 .options {
     margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        margin-top: 0.5rem;
+        height: 1rem;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid lightgray;
+        border-radius: 0.2rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    
 }
 
 .button {
